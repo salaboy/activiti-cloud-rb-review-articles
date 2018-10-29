@@ -27,23 +27,23 @@
       <bpmn2:incoming>SequenceFlow_0p9eo45</bpmn2:incoming>
     </bpmn2:endEvent>
     <bpmn2:sequenceFlow id="SequenceFlow_0p9eo45" sourceRef="Task_1504ndu" targetRef="EndEvent_0kgmeth" />
-    <bpmn2:userTask id="Task_1ts5he2" name="Generate Content" activiti:candidateGroups="authors">
+    <bpmn2:userTask id="Task_1ts5he2" name="Article Creation" activiti:candidateGroups="authors">
       <bpmn2:incoming>SequenceFlow_1tsig5s</bpmn2:incoming>
       <bpmn2:outgoing>SequenceFlow_0fmmwxn</bpmn2:outgoing>
     </bpmn2:userTask>
-    <bpmn2:serviceTask id="Task_06zpdq9" name="Report new content Created" implementation="slackit">
+    <bpmn2:serviceTask id="Task_06zpdq9" name="Report Article Created" implementation="slackit">
       <bpmn2:incoming>SequenceFlow_0jf5zw5</bpmn2:incoming>
       <bpmn2:outgoing>SequenceFlow_0rnjdvy</bpmn2:outgoing>
     </bpmn2:serviceTask>
-    <bpmn2:serviceTask id="Task_17day0m" name="Report new content created" implementation="slackit">
+    <bpmn2:serviceTask id="Task_17day0m" name="Report Article Rejected" implementation="slackit">
       <bpmn2:incoming>SequenceFlow_0accg0z</bpmn2:incoming>
       <bpmn2:outgoing>SequenceFlow_01rqebc</bpmn2:outgoing>
     </bpmn2:serviceTask>
-    <bpmn2:userTask id="Task_0q1dgw1" name="Write Approved Notes" activiti:candidateGroups="editors">
+    <bpmn2:userTask id="Task_0q1dgw1" name="Add Editor Notes to Publish" activiti:candidateGroups="editors">
       <bpmn2:incoming>SequenceFlow_0rnjdvy</bpmn2:incoming>
       <bpmn2:outgoing>SequenceFlow_1rz4uso</bpmn2:outgoing>
     </bpmn2:userTask>
-    <bpmn2:userTask id="Task_1504ndu" name="Write Rejected Notes" activiti:candidateGroups="editors">
+    <bpmn2:userTask id="Task_1504ndu" name="Add Editor Rejected reasons" activiti:candidateGroups="editors">
       <bpmn2:incoming>SequenceFlow_01rqebc</bpmn2:incoming>
       <bpmn2:outgoing>SequenceFlow_0p9eo45</bpmn2:outgoing>
     </bpmn2:userTask>
