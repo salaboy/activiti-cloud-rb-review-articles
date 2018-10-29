@@ -5,7 +5,7 @@
 
 	<groupId>org.activiti.cloud</groupId>
 	<artifactId>activiti-cloud-rb-review-articles</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<packaging>jar</packaging>
 
 	<name>activiti-cloud-rb-review-articles</name>
